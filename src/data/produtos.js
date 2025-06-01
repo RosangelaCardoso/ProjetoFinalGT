@@ -13,7 +13,7 @@ export const produtos = [
     tipo: "Camisa",
     preco: 129.99,
     descricao: "Perfeita para ambientes formais.",
-    imagem: "/images/camisa-social-azul.jpg",
+    imagem: "/src/assets/camisa social azul.webp",
   },
   {
     id: "3",
@@ -21,7 +21,7 @@ export const produtos = [
     tipo: "Camisa",
     preco: 89.99,
     descricao: "Camisa casual com estampa moderna.",
-    imagem: "/images/camisa-estampada.jpg",
+    imagem: "/src/assets/camisa estampada.jpeg",
   },
   // Você pode adicionar mais produtos
 ];
