@@ -2,38 +2,115 @@ import { Link } from "react-router-dom";
 import { ProductCard } from "./ProductCard.jsx";
 import { useState, useEffect } from "react";
 
-// Base local simulada de produtos
+// ✅ Importando imagens da pasta src/assets
+import tenisAdidasImg from '../../../assets/tenis-adidas.jpg';
+import camisaNikeImg from '../../../assets/camisa-nike.jpg';
+import calcaJeansImg from '../../../assets/calca-jeans.jpg';
+import foneJblImg from '../../../assets/fone-jbl.jpg';
+import relogioCasioImg from '../../../assets/relogio-casio.jpg';
+import jaquetaPumaImg from '../../../assets/jaqueta-puma.jpg';
+import mochilaOakleyImg from '../../../assets/mochila-oakley.jpg';
+import oculosRaybanImg from '../../../assets/oculos-rayban.jpg';
+
+// ✅ Base local simulada de produtos
 const produtosLocais = [
-  { id: 1, nome: "Tênis Adidas", tipo: "Tênis" },
-  { id: 2, nome: "Camisa Nike", tipo: "Camisa" },
-  { id: 3, nome: "Calça Jeans", tipo: "Calça" },
-  { id: 4, nome: "Fone JBL", tipo: "Fone" },
-  { id: 5, nome: "Relógio Casio", tipo: "Relógio" },
-  { id: 6, nome: "Jaqueta Puma", tipo: "Jaqueta" },
-  { id: 7, nome: "Mochila Oakley", tipo: "Mochila" },
-  { id: 8, nome: "Óculos Ray-Ban", tipo: "Óculos" },
-  { id: 9, nome: "Boné Vans", tipo: "Boné" },
-  { id: 10, nome: "Sandália Havaianas", tipo: "Sandália" },
+  {
+    id: 1,
+    nome: "Tênis Adidas",
+    tipo: "Tênis",
+    preco: 299.99,
+    desconto: 0.2,
+    imagem: tenisAdidasImg,
+    marca: "Adidas",
+    sexo: "Unissex"
+  },
+  {
+    id: 2,
+    nome: "Camisa Nike",
+    tipo: "Camisa",
+    preco: 149.99,
+    desconto: 0.1,
+    imagem: camisaNikeImg,
+    marca: "Nike",
+    sexo: "Masculino"
+  },
+  {
+    id: 3,
+    nome: "Calça Jeans",
+    tipo: "Calça",
+    preco: 199.99,
+    desconto: 0,
+    imagem: calcaJeansImg,
+    marca: "Levi's",
+    sexo: "Feminino"
+  },
+  {
+    id: 4,
+    nome: "Fone JBL",
+    tipo: "Fone",
+    preco: 349.99,
+    desconto: 0.15,
+    imagem: foneJblImg,
+    marca: "JBL",
+    sexo: "Unissex"
+  },
+  {
+    id: 5,
+    nome: "Relógio Casio",
+    tipo: "Relógio",
+    preco: 399.99,
+    desconto: 0,
+    imagem: relogioCasioImg,
+    marca: "Casio",
+    sexo: "Masculino"
+  },
+  {
+    id: 6,
+    nome: "Jaqueta Puma",
+    tipo: "Jaqueta",
+    preco: 249.99,
+    desconto: 0.1,
+    imagem: jaquetaPumaImg,
+    marca: "Puma",
+    sexo: "Feminino"
+  },
+  {
+    id: 7,
+    nome: "Mochila Oakley",
+    tipo: "Mochila",
+    preco: 299.99,
+    desconto: 0.05,
+    imagem: mochilaOakleyImg,
+    marca: "Oakley",
+    sexo: "Unissex"
+  },
+  {
+    id: 8,
+    nome: "Óculos Ray-Ban",
+    tipo: "Óculos",
+    preco: 499.99,
+    desconto: 0.25,
+    imagem: oculosRaybanImg,
+    marca: "Ray-Ban",
+    sexo: "Unissex"
+  }
 ];
 
-// Função local que simula pegar todos os produtos
+// ✅ Função que simula pegar os produtos
 const getProdutosLocal = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(produtosLocais);
-    }, 500); // Simula um pequeno delay
+    }, 500);
   });
 };
 
+// ✅ Componente principal
 export const FeaturedProductList = () => {
   const [produtos, setProdutos] = useState([]);
 
-  function carregarProdutos() {
-    getProdutosLocal().then(setProdutos);
-  }
-
   useEffect(() => {
-    carregarProdutos();
+    getProdutosLocal().then(setProdutos);
   }, []);
 
   return (

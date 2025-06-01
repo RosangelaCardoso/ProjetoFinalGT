@@ -7,7 +7,7 @@ let pedidoPendente = {
       preco: 99.99,
       quantidade: 2,
       desconto: 0.1,
-      imagem: "/images/camisa-polo-branca.jpg",
+      imagem: "/src/assets/camisa social polo branca.webp",
     },
     {
       id: "2",
@@ -15,7 +15,7 @@ let pedidoPendente = {
       preco: 129.99,
       quantidade: 1,
       desconto: 0,
-      imagem: "/images/camisa-social-azul.jpg",
+      imagem: "/src/assets/camisa social azul.webp",
     },
   ],
   status: "Pendente",
