@@ -3,14 +3,14 @@ import { ProductCard } from "./ProductCard.jsx";
 import { useState, useEffect } from "react";
 
 // ✅ Importando imagens da pasta src/assets
-import tenisAdidasImg from '/src/assets/tenis-adidas.jpg';
-import camisaNikeImg from '/src/assets/camisa-nike.jpg';
-import calcaJeansImg from '/src/assets/calca-jeans.jpg';
-import foneJblImg from '/src/assets/fone-jbl.jpg';
-import relogioCasioImg from '/src/assets/relogio-casio.jpg';
-import jaquetaPumaImg from '/src/assets/jaqueta-puma.jpg';
-import mochilaOakleyImg from '/src/assets/mochila-oakley.jpg';
-import oculosRaybanImg from '/src/assets/oculos-rayban.jpg';
+import tenisAdidasImg from 'src/assets/tenis-adidas.jpg';
+import camisaNikeImg from 'src/assets/camisa-nike.jpg';
+import calcaJeansImg from 'src/assets/calca-jeans.jpg';
+import foneJblImg from 'src/assets/fone-jbl.jpg';
+import relogioCasioImg from 'src/assets/relogio-casio.jpg';
+import jaquetaPumaImg from 'src/assets/jaqueta-puma.jpg';
+import mochilaOakleyImg from 'src/assets/mochila-oakley.jpg';
+import oculosRaybanImg from 'src/assets/oculos-rayban.jpg';
 
 // ✅ Base local simulada de produtos
 const produtosLocais = [
