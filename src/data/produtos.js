@@ -5,7 +5,7 @@ export const produtos = [
     tipo: "Camisa",
     preco: 99.99,
     descricao: "Camisa polo confortável e estilosa.",
-    imagem: "/images/camisa-polo-branca.jpg",
+    imagem: "/src/assets/camisa polo branca.webp",
   },
   {
     id: "2",
