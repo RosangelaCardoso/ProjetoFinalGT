@@ -10,6 +10,8 @@ import foneJblImg from "../../../assets/fone-jbl.jpeg";
 import jaquetaPumaImg from "../../../assets/jaqueta-puma.jpeg";
 import mochilaOakleyImg from "../../../assets/mochila-oakley.jpeg";
 import oculosRaybanImg from "../../../assets/oculos-rayban.webp";
+import relogioCasioImg from "../../../assets/Relógio Casio.jpeg"; // ou .jpg/.webp conforme o nome
+
 
 // Produtos com imagens e preços
 const produtosLocais = [
@@ -17,7 +19,7 @@ const produtosLocais = [
   { id: 2, nome: "Camisa Nike", tipo: "Camisa", preco: 149.90, imagem: camisaNikeImg },
   { id: 3, nome: "Calça Jeans", tipo: "Calça", preco: 199.90, imagem: calcaJeansImg },
   { id: 4, nome: "Fone JBL", tipo: "Fone", preco: 399.00, imagem: foneJblImg },
-  { id: 5, nome: "Relógio Casio", tipo: "Relógio", preco: 250.00 }, // sem imagem
+{ id: 5, nome: "Relógio Casio", tipo: "Relógio", preco: 250.00, imagem: relogioCasioImg },
   { id: 6, nome: "Jaqueta Puma", tipo: "Jaqueta", preco: 329.90, imagem: jaquetaPumaImg },
   { id: 7, nome: "Mochila Oakley", tipo: "Mochila", preco: 189.90, imagem: mochilaOakleyImg },
   { id: 8, nome: "Óculos Ray-Ban", tipo: "Óculos", preco: 549.00, imagem: oculosRaybanImg },
